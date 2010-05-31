@@ -1,0 +1,5 @@
+#include settings-local.prf
+include settings-serverbackup.prf
+include settings-common.prf
+
+# Include all subdirectories under remote root.

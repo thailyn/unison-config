@@ -1,0 +1,9 @@
+include charles-common.prf
+
+path = Desktop
+path = Documents
+path = eBooks
+
+ignore = Path Documents/My Music
+ignore = Path Documents/My Pictures
+ignore = Path Documents/My Videos

@@ -1,0 +1,44 @@
+# This file holds settings that apply to all profiles across all machines.
+# Settings here are general options, such as how to perform the sync, but
+# regarding which files to sync.  The root directories are specified in the
+# local settings file, and paths to sync are in path profiles.
+
+# If Unison adds any preferences (e.g., via the GUI), add them to
+# this file.
+addprefsto = settings-common.prf
+
+# add version number to name of unison executable on server
+addversionno = true
+
+# synchronize modification times
+times = true
+
+# request confirmation for whole-replica deletes
+confirmbigdeletes = true
+
+# Some file patterns and paths to ignore
+ignore = Name temp.*
+ignore = Name *~
+ignore = Name .*~
+ignore = Name *.tmp
+ignore = Name #*#
+ignore = Name .svn
+ignore = Name .git
+ignore = Name *.git
+
+# Follow these symbolic links -- they are used to organize common files
+#  between machines
+follow = Path AppData/Roaming/.emacs
+follow = Path AppData/Roaming/.emacs-archive
+follow = Path AppData/Roaming/.emacs.d
+follow = Path Documents
+follow = Path Music
+follow = Path Music-FLAC
+
+# Command for displaying diffs... need to find out what parameters to pass
+#diff = C:\Program Files\TortoiseSVN\bin\TortoiseMerge.exe
+
+# Log actions to the specified logfile.  Default location is ~/unison.log,
+#  though I can't simply use the line commented out here to explicitly say that.
+log = true
+#logfile = ~/unison.log

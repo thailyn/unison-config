@@ -1,0 +1,63 @@
+# The local and remote roots to synchronize
+root = C:\Users\Charles
+root = ssh://atheneum-caelestis.dynalias.net//srv/rsync/backup/Urza/Charles
+
+# The command to use instead of "ssh" (needs some revision)
+sshcmd = C:\Users\Charles\.unison\ssh2plink.bat
+
+# If Unison adds any preferences (e.g., via the GUI), add them to
+# this file.
+addprefsto = charles-common.prf
+
+# add version number to name of unison executable on server
+addversionno = true
+
+# synchronize modification times
+times = true
+
+# Some file patterns and paths to ignore
+ignore = Name temp.*
+ignore = Name *~
+ignore = Name .*~
+ignore = Name *.tmp
+
+# Ignore AppData folder as a whole; add in important parts specifically
+ignore = Path AppData
+
+# Ignore some paths that should be under AppData
+ignore = Path .eclipse
+ignore = Path .maptool
+
+# Ignore files in root directory
+ignore = Path *.*
+
+# Ignore XP folders that do not exist in Vista
+ignore = Path Application Data
+ignore = Path Cookies
+ignore = Path Local Settings
+ignore = Path My Documents
+ignore = Path NetHood
+ignore = Path PrintHood
+ignore = Path Recent
+ignore = Path SendTo
+ignore = Path Start Menu
+ignore = Path Templates
+ignore = Path Documents/My Music
+ignore = Path Documents/My Pictures
+ignore = Path Documents/My Videos
+
+# For now, ignore the D&D sessions
+ignore = Path Documents/Personal Files/D&D/4ed/Sessions
+
+# Follow these symbolic links -- they are used to organize common files
+#  between machines
+follow = Path Music
+follow = Path Music-FLAC
+
+# Command for displaying diffs... need to find out what parameters to pass
+#diff = C:\Program Files\TortoiseSVN\bin\TortoiseMerge.exe
+
+# Log actions to the specified logfile.  Default location is ~/unison.log,
+#  though I can't simply use the line commented out here to explicitly say that.
+log = true
+#logfile = ~/unison.log

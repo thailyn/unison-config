@@ -1,0 +1,9 @@
+# Use the default, general settings
+include charles-common.prf
+
+# Include all the different media paths
+include charles-images.prf
+include charles-music.prf
+include charles-pictures.prf
+include charles-podcasts.prf
+include charles-videos.prf

@@ -1,0 +1,5 @@
+path = Images
+
+ignore = Path Images/ripped
+ignore = Path Images/to rip
+ignore = Path Images/to rip flac

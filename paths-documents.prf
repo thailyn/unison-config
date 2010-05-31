@@ -1,0 +1,11 @@
+path = Desktop
+path = Documents
+path = eBooks
+path = Zeno - iPod
+
+ignore = Path Documents/My Music
+ignore = Path Documents/My Pictures
+ignore = Path Documents/My Videos
+
+# For now, ignore the D&D sessions
+ignore = Path Documents/Pamela
