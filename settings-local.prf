@@ -6,7 +6,12 @@
 
 # The local and remote roots to synchronize
 root = C:\Users\Charles
-root = ssh://atheneum-caelestis.dynalias.net//srv/rsync/backup/Miyuki/Charles
+#root = ssh://atheneum-caelestis.dynalias.net//srv/rsync/backup/Miyuki/Charles
+root = Z:\sync\Charles\Miyuki
+
+# root-specific settings
+perms = 0
+mountpoint = Documents
 
 # The command to use instead of "ssh" (needs some revision)
 #sshcmd = C:\Users\Charles\.unison\ssh2plink.bat
