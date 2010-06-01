@@ -8,12 +8,19 @@ rem	-p nnn (replaced by P); -e none (no equivalent)
 
 setlocal
 
-rem	Edit this to point to your location for plink.exe
-rem set PLINKEXE="C:\Program Files (x86)\PuTTY\plink.exe"
-set PLINKEXE=plink
+rem set INIFILE="C:\Users\Charles\.unison\settings.ini"
+set INIFILE="%~dp0settings.ini"
+call:getvalue %INIFILE% "plinkexe" "" PLINKEXE
+call:getvalue %INIFILE% "username" "" USERNAME
+call:getvalue %INIFILE% "servername" "" SERVERNAME
+
+rem echo plinkexe: %PLINKEXE%
+rem echo username: %USERNAME%
+rem echo servername: %SERVERNAME%
+rem goto:eof
 
 rem set ARGLIST=-ssh
-set ARGLIST=atheneum-caelestis.dynalias.net -l charles
+set ARGLIST=%SERVERNAME% -l %USERNAME%
 
 :nextarg
 
@@ -28,7 +35,7 @@ if NOT "%1" == "-p" goto checkesc
 
 :checkesc
 
-if "%1" == "atheneum-caelestis.dynalias.net" goto skiparg
+if "%1" == "%SERVERNAME%" goto skiparg
 
 if NOT "%1" == "-e" goto useit
 	rem unison likes to include "-e none" which plink does not support.
@@ -50,5 +57,15 @@ goto nextarg
 endlocal
 
 :doneargs
-
 %PLINKEXE%  %ARGLIST%
+
+goto:eof
+
+:getvalue
+rem %1 = name of ini file to search in.
+rem %2 = search term to look for
+rem %3 = group name (not currently used)
+rem %4 = variable to place search result
+FOR /F "eol=; eol=[ tokens=1,2,3* delims==" %%i in ('findstr /b /l /i %~2= %1') DO set %~4=%%~j
+rem replace last part with %%~j to take surrounding " out of j
+goto:eof
