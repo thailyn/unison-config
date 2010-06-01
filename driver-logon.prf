@@ -3,4 +3,5 @@ include settings-common.prf
 
 include paths-documents.prf
 include paths-appdata.prf
-include paths-gamefiles.prf
+# Miyuki is not a game machine; don't sync this profile at logon:
+#include paths-gamefiles.prf

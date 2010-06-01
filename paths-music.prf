@@ -1,3 +1,6 @@
 path = Music
-ignore = Path Music/Podcasts
+ignore = Path Music/iTunes
+ignore = Path Music/CDDB
+ignore = Path Music/test
+#ignore = Path Music/Podcasts
 #ignore = Path Music/iTunes/iTunes Music/Podcasts

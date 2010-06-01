@@ -3,4 +3,3 @@ path = Pictures
 ignore = Path Pictures/Album Art Downloader
 ignore = Path Pictures/ddi
 ignore = Path Pictures/iTSfv
-ignore = Path Pictures/iPod Photo Cache

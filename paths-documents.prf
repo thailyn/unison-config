@@ -3,9 +3,19 @@ path = Documents
 path = eBooks
 path = Zeno - iPod
 
+# For now, don't sync.  Maybe do so in the future
+ignore = Path Documents/Notes
+ignore = Path Documents/OneNote Notebooks
+ignore = Path Documents/Visual Studio 2008
+
+# Don't want to sync these
+ignore = Path Documents/Default.rdp
+ignore = Path Documents/Bluetooth Exchange Folder
 ignore = Path Documents/My Music
 ignore = Path Documents/My Pictures
 ignore = Path Documents/My Videos
 
 # For now, ignore the D&D sessions
+ignore = Path Documents/Personal Files/D&D/4ed/Sessions
 ignore = Path Documents/Pamela
+ignore = Path Documents/Pamela Call Recordings

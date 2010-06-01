@@ -1,0 +1,11 @@
+# Unison profile to sync only a part of the Music directory at a time.
+# This was needed because the ssh connection Unison establishes would time out
+# before it finished scanning the contents of the directory.  This is only a
+# problem the first time the Music directory is synced, as it needs to
+# completely scan the files, not 'fastcheck' them.
+
+include settings-local.prf
+include settings-common.prf
+
+#ignore = Path Music/[A-L]*
+#ignore = Path Music/[A-E]*

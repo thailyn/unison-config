@@ -1,9 +1,0 @@
-# Use the default settings
-include charles-common.prf
-
-# Specify the paths to music
-path = Music
-
-# ignore the subfolder to podcasts
-ignore = Path Music/Podcasts
-ignore = Path Music/iTunes/iTunes Music/Podcasts

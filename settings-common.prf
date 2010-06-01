@@ -23,17 +23,15 @@ ignore = Name .*~
 ignore = Name *.tmp
 ignore = Name #*#
 ignore = Name .svn
-ignore = Name .git
-ignore = Name *.git
 
 # Follow these symbolic links -- they are used to organize common files
 #  between machines
-follow = Path AppData/Roaming/.emacs
-follow = Path AppData/Roaming/.emacs-archive
-follow = Path AppData/Roaming/.emacs.d
 follow = Path Documents
 follow = Path Music
 follow = Path Music-FLAC
+follow = Path AppData/Roaming/.emacs
+follow = Path AppData/Roaming/.emacs-archive
+follow = Path AppData/Roaming/.emacs.d
 
 # Command for displaying diffs... need to find out what parameters to pass
 #diff = C:\Program Files\TortoiseSVN\bin\TortoiseMerge.exe

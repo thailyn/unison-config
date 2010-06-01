@@ -1,18 +1,12 @@
 # This prf file contains Unison settings specific to:
-#  machine: Urza
+#  machine: Miyuki
 #  user: Charles
 # Settings that are generic over all machines and users are elsewhere.
 # All driver profiles for this machine and user must include this file.
 
 # The local and remote roots to synchronize
 root = C:\Users\Charles
-#root = ssh://atheneum-caelestis.dynalias.net//srv/rsync/backup/Urza/Charles
-root = Z:\sync\Charles\Urza
-
-# root-sepcific settings
-# (or 0o0?) do not sync permissions across a drobo
-perms = 0
-mountpoint = Documents
+root = ssh://atheneum-caelestis.dynalias.net//srv/rsync/backup/Miyuki/Charles
 
 # The command to use instead of "ssh" (needs some revision)
 #sshcmd = C:\Users\Charles\.unison\ssh2plink.bat

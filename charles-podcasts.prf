@@ -1,7 +1,0 @@
-# Use the default settings
-include charles-common.prf
-
-# Specify the path to podcasts
-path = Podcasts
-path = Music/Podcasts
-path = Music/iTunes/iTunes Music/Podcasts
