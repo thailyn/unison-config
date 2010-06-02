@@ -4,8 +4,7 @@
 # It mirrors the music files from the server to this machine.
 
 # The local and remote roots to synchronize
-root = C:\Users\Macanka\Music
-#root = /cygdrive/c/Users/Macanka/Music
+root = C:\Users\Macanka\Mirrored Music
 root = Z:\sync\common\music\mp3
 ignore = Path {iTunes}
 ignore = Path {Mode IQ}
