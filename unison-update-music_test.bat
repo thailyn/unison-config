@@ -1,20 +1,21 @@
 @echo off
-echo This script will sync against the rsync partner on atheneum-caelestis.dynalias.net.
-
-
 setlocal
 
 rem cd c:/cygwin/bin
 set INIFILE="%~dp0settings.ini"
+call:getvalue %INIFILE% "servername" "" SERVERNAME
+call:getvalue %INIFILE% "unisonpath" "" UNISONPATH
 call:getvalue %INIFILE% "outputlevel" "" OUTPUTLEVEL
 call:getvalue %INIFILE% "fastcheck" "" FASTCHECKVAL
 call:getvalue %INIFILE% "profilefile" "" PROFILEFILE
 
-rem c:/cygwin/bin/unison-2.32.exe mirror-music -fastcheck yes
-c:/cygwin/bin/unison-2.27.exe %PROFILEFILE% -fastcheck %FASTCHECKVAL% %OUTPUTLEVEL%
+echo This script will sync against the root on %SERVERNAME%.
+rem %UNISONPATH% %PROFILEFILE% -fastcheck %FASTCHECKVAL% %OUTPUTLEVEL%
+echo %UNISONPATH% %PROFILEFILE% -fastcheck %FASTCHECKVAL% %OUTPUTLEVEL%
 rem pause
 
 endlocal
+goto:eof
 
 
 :getvalue
