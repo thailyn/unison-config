@@ -6,9 +6,13 @@
 # The local and remote roots to synchronize
 root = C:\Users\Macanka\Music
 #root = /cygdrive/c/Users/Macanka/Music
-root = ssh://atheneum-caelestis.dynalias.net//srv/rsync/common/music/mp3
+root = Z:\sync\common\music\mp3
 ignore = Path {iTunes}
 ignore = Path {Mode IQ}
+
+# root-specific settings
+perms = 0
+mountpoint = Barry Manilow
 
 # The command to use instead of "ssh" (needs some revision)
 #sshcmd = C:\Documents and Settings\cmacanka\.unison\ssh2plink.bat
