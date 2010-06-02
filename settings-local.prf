@@ -1,19 +1,28 @@
-# This prf file contains Unison settings specific to:
-#  machine: Urza
-#  user: Charles
-# Settings that are generic over all machines and users are elsewhere.
-# All driver profiles for this machine and user must include this file.
+# This prf file configures syncing:
+#  machine: macankapc
+#  user: Macanka
+# It mirrors the music files from the server to this machine.
 
 # The local and remote roots to synchronize
-root = C:\Users\Charles
-#root = ssh://atheneum-caelestis.dynalias.net//srv/rsync/backup/Urza/Charles
-root = Z:\sync\Charles\Urza
-
-# root-sepcific settings
-# (or 0o0?) do not sync permissions across a drobo
-perms = 0
-mountpoint = Documents
+root = C:\Users\Macanka\Music
+#root = /cygdrive/c/Users/Macanka/Music
+root = ssh://atheneum-caelestis.dynalias.net//srv/rsync/common/music/mp3
+ignore = Path {iTunes}
+ignore = Path {Mode IQ}
 
 # The command to use instead of "ssh" (needs some revision)
-#sshcmd = C:\Users\Charles\.unison\ssh2plink.bat
-sshcmd = C:\Users\Charles\AppData\Roaming\.unison\ssh2plink.bat
+#sshcmd = C:\Documents and Settings\cmacanka\.unison\ssh2plink.bat
+sshcmd = C:\cygwin\home\Macanka\.unison\ssh2plink.bat
+
+# force does not change the output; all information is presented and user input
+# is requested.  however, it does change what is the *default* action
+force = ssh://atheneum-caelestis.dynalias.net//srv/rsync/common/music/mp3
+#path = Barry Manilow/Swing Street
+
+# batch displays all text output, but automatically selects default choice
+# for propigating changes.  provides slightly more info for changes,
+# such as modification times and sizes
+#batch = true
+# does not print the % done, presumably does say when files finish
+#terse = true
+#silent = true  # just gives a connected message... that is *all*

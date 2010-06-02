@@ -14,7 +14,7 @@ addversionno = true
 times = true
 
 # request confirmation for whole-replica deletes
-confirmbigdeletes = true
+#confirmbigdeletes = true
 
 # Some file patterns and paths to ignore
 ignore = Name temp.*
@@ -28,12 +28,12 @@ ignore = Name *.git
 
 # Follow these symbolic links -- they are used to organize common files
 #  between machines
-follow = Path AppData/Roaming/.emacs
-follow = Path AppData/Roaming/.emacs-archive
-follow = Path AppData/Roaming/.emacs.d
-follow = Path Documents
-follow = Path Music
-follow = Path Music-FLAC
+#follow = Path Application Data/.emacs
+#follow = Path Application Data/.emacs-archive
+#follow = Path Application Data/.emacs.d
+#follow = Path My Documents/org
+#follow = Path Music
+#follow = Path Music-FLAC
 
 # Command for displaying diffs... need to find out what parameters to pass
 #diff = C:\Program Files\TortoiseSVN\bin\TortoiseMerge.exe

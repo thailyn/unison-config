@@ -1,5 +1,0 @@
-include charles-common.prf
-
-path = Pictures
-
-ignore = Path Pictures/iTSfv

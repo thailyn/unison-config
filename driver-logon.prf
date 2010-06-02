@@ -1,6 +1,0 @@
-include settings-local.prf
-include settings-common.prf
-
-include paths-documents.prf
-include paths-appdata.prf
-include paths-gamefiles.prf
