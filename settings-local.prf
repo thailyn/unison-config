@@ -11,7 +11,7 @@ root = Z:\sync\Charles\cmacankapc
 # root-sepcific settings
 # (or 0o0?) do not sync permissions across a drobo
 perms = 0
-mountpoint = Documents
+mountpoint = My Documents
 
 # The command to use instead of "ssh" (needs some revision)
 sshcmd = C:\Documents and Settings\cmacanka\.unison\ssh2plink.bat
