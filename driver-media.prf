@@ -1,9 +1,0 @@
-include settings-local.prf
-include settings-common.prf
-
-# All of the different profiles that contain media files.
-include paths-images.prf
-include paths-music.prf
-include paths-pictures.prf
-include paths-podcasts.prf
-include paths-videos.prf

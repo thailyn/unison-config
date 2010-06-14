@@ -23,15 +23,13 @@ ignore = Name .*~
 ignore = Name *.tmp
 ignore = Name #*#
 ignore = Name .svn
-ignore = Name .git
-ignore = Name *.git
 
 # Follow these symbolic links -- they are used to organize common files
 #  between machines
-follow = Path AppData/Roaming/.emacs
-follow = Path AppData/Roaming/.emacs-archive
-follow = Path AppData/Roaming/.emacs.d
-follow = Path Documents
+follow = Path Application Data/.emacs
+follow = Path Application Data/.emacs-archive
+follow = Path Application Data/.emacs.d
+follow = Path My Documents/org
 follow = Path Music
 follow = Path Music-FLAC
 

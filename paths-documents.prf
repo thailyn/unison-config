@@ -1,11 +1,16 @@
 path = Desktop
-path = Documents
-path = eBooks
-path = Zeno - iPod
+path = My Documents
 
-ignore = Path Documents/My Music
-ignore = Path Documents/My Pictures
-ignore = Path Documents/My Videos
-
-# For now, ignore the D&D sessions
-ignore = Path Documents/Pamela
+# ignore directories with uninteresting contents
+#ignore = Path My Documents/Default.rdp
+ignore = Path My Documents/Bluetooth Exchange Folder
+ignore = Path My Documents/My Downloads
+ignore = Path My Documents/My Music
+ignore = Path My Documents/My Pictures
+ignore = Path My Documents/My Received Files
+ignore = Path My Documents/My Videos
+ignore = Path My Documents/SQL Server Management Studio
+ignore = Path My Documents/Visual FoxPro Projects
+ignore = Path My Documents/Visual Studio 2005
+ignore = Path My Documents/Visual Studio 2008
+#ignore = Path My Documents/Work

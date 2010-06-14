@@ -1,4 +1,0 @@
-include settings-local.prf
-include settings-common.prf
-
-include paths-all.prf
