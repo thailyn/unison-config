@@ -6,7 +6,12 @@
 
 # The local and remote roots to synchronize
 root = C:\Documents and Settings\cmacanka
-root = ssh://atheneum-caelestis.dynalias.net//srv/rsync/backup/cmacankapc/cmacanka
+root = Z:\sync\Charles\cmacankapc
+
+# root-sepcific settings
+# (or 0o0?) do not sync permissions across a drobo
+perms = 0
+mountpoint = Documents
 
 # The command to use instead of "ssh" (needs some revision)
 sshcmd = C:\Documents and Settings\cmacanka\.unison\ssh2plink.bat
