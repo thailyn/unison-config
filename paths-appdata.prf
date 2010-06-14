@@ -1,24 +1,19 @@
 # emacs files
-path   = Application Data/.emacs
-path   = Application Data/.emacs-archive
-path   = Application Data/.emacs.d
-ignore = Path Application Data/.emacs.d/tramp
+# This directory is now stored in a git repo, so we do not need to sync it.
+#path   = Application Data/.emacs
+#path   = Application Data/.emacs-archive
+#path   = Application Data/.emacs.d
+#ignore = Path Application Data/.emacs.d/tramp
 
 # pidgin logs, but not system logs
 #path   = Application Data/.purple/logs
 #ignore = Application Data/.purple/logs/aim/*/.system
 
 # unison profiles, etc.
-path   = .unison
-ignore = Path .unison/ar*
-ignore = Path .unison/lk*
-
-# iTunes library
-#path   = AppData/Roaming/Apple Computer/iTunes/iTunes
-
-# foobar2000 settings and library
-#path   = AppData/Roaming/foobar2000
-
+# This directory is now stored in a git repo, so we do not need to sync it.
+#path   = .unison
+#ignore = Path .unison/ar*
+#ignore = Path .unison/lk*
 
 # Files that I probably want to backup, but needs further investigation:
 #path = AppData/Roaming/Mozilla/Firefox/profiles.ini
